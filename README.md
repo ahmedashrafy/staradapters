@@ -98,12 +98,12 @@ accelerate launch finetune.py \
 
 To evaluate the models, choose one of the hugging face repo's mentioned above and following the next steps:
 
-## 1. Clone the Repository
+## 1. Clone the Evaluation Repository
 
-First, clone the GitHub repository to access the necessary files for evaluation:
+First, clone the [BigCode Evaluation Harness](https://github.com/bigcode-project/bigcode-evaluation-harness) repository to access the necessary files for evaluation:
 
 ```bash
-git clone https://github.com/ahmedashrafy/staradapters.git
+git clone https://github.com/bigcode-project/bigcode-evaluation-harness.git
 ```
 
 ## 2. Change Directory
