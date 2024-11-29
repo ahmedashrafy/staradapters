@@ -14,7 +14,6 @@ from transformers import (
     BitsAndBytesConfig,
     logging,
     set_seed,
-    TrainerCallback,
     AutoTokenizer,
 )
 from trl import SFTTrainer
@@ -198,9 +197,9 @@ def main(args):
     tokenizer = AutoTokenizer.from_pretrained(args.model_id)
 
     bnb_config = BitsAndBytesConfig(
-        load_in_4bit=True,
-        bnb_4bit_quant_type="nf4",
-        bnb_4bit_compute_dtype=torch.bfloat16,
+        load_in_4bit            =True,
+        bnb_4bit_quant_type     ="nf4",
+        bnb_4bit_compute_dtype  =torch.bfloat16,
     )
     
     lora_config = LoraConfig(
@@ -237,9 +236,9 @@ def main(args):
     print("Loading dataset...")
     data = load_dataset(
         args.dataset_name,
-        data_dir=args.subset,
-        split=args.split,
-        token=token,
+        data_dir    =   args.subset,
+        split       =   args.split,
+        token       =   token,
         num_proc=args.num_proc if args.num_proc else multiprocessing.cpu_count(),
     )
     
@@ -266,31 +265,31 @@ def main(args):
         train_dataset=data,
         max_seq_length=args.max_seq_length,
         args=transformers.TrainingArguments(
-            per_device_train_batch_size=args.micro_batch_size,
-            gradient_accumulation_steps=args.gradient_accumulation_steps,
-            warmup_steps=args.warmup_steps,
-            max_steps=args.max_steps,
-            learning_rate=args.learning_rate,
-            lr_scheduler_type="cosine_with_restarts",
-            weight_decay=args.weight_decay,
-            bf16=args.bf16,
-            logging_strategy="steps",
-            logging_steps=10,
-            output_dir=args.output_dir,
-            optim="paged_adamw_8bit",
-            seed=args.seed,
-            run_name=f"train-{args.model_id.split('/')[-1]}",
-            report_to="wandb",
-            save_strategy="steps",
-            save_steps=args.save_steps,
-            save_total_limit=args.save_total_limit,
-            hub_strategy="every_save",
-            hub_model_id=args.hub_repo_id,
-            hub_token=os.environ.get("HF_TOKEN"),
-            push_to_hub=args.push_to_hub,
+            per_device_train_batch_size =   args.micro_batch_size,
+            gradient_accumulation_steps =   args.gradient_accumulation_steps,
+            warmup_steps                =   args.warmup_steps,
+            max_steps                   =   args.max_steps,
+            learning_rate               =   args.learning_rate,
+            lr_scheduler_type           =   "cosine_with_restarts",
+            weight_decay                =   args.weight_decay,
+            bf16                        =   args.bf16,
+            logging_strategy            =   "steps",
+            logging_steps               =   10,
+            output_dir                  =   args.output_dir,
+            optim                       =   "paged_adamw_8bit",
+            seed                        =   args.seed,
+            run_name                    =   f"train-{args.model_id.split('/')[-1]}",
+            report_to                   =   "wandb",
+            save_strategy               =   "steps",
+            save_steps                  =   args.save_steps,
+            save_total_limit            =   args.save_total_limit,
+            hub_strategy                =   "every_save",
+            hub_model_id                =   args.hub_repo_id,
+            hub_token                   =   os.environ.get("HF_TOKEN"),
+            push_to_hub                 =   args.push_to_hub,
         ),
-        peft_config=lora_config,
-        dataset_text_field=args.dataset_text_field,
+        peft_config                     =   lora_config,
+        dataset_text_field              =   args.dataset_text_field,
     )
 
     print("Training...")
@@ -307,9 +306,13 @@ def main(args):
 
 if __name__ == "__main__":
     args = get_args()
+
     set_seed(args.seed)
+
     os.makedirs(args.output_dir, exist_ok=True)
 
     logging.set_verbosity_error()
 
     main(args)
+
+
