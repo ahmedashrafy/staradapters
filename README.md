@@ -9,8 +9,10 @@ This repository has the reproduction code and the evaluation result files for th
 - Shafay Joyo
 
 # Models [WIP]
-- Python: https://huggingface.co/ahmedashrafay/starcoder2-lora-python-adapter
-- Java: https://drive.google.com/drive/folders/1pzKjwn8BRSuJOBker24XrmA6qHCo7Qte?usp=drive_link
+- Python: [https://huggingface.co/ahmedashrafay/staradapters-python](https://huggingface.co/ahmedashrafay/staradapters-python)
+- Java: [https://huggingface.co/ahmedashrafay/staradapters-java](https://huggingface.co/ahmedashrafay/staradapters-java)
+- Javascript: [https://huggingface.co/ahmedashrafay/staradapters-javascript](https://huggingface.co/ahmedashrafay/staradapters-javascript)
+- C++: [https://huggingface.co/ahmedashrafay/staradapters-cpp](https://huggingface.co/ahmedashrafay/staradapters-cpp)
 
 # Credits
 This repository builds upon code from:
