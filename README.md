@@ -8,12 +8,20 @@ This repository has the reproduction code and the evaluation result files for th
 - Anusha Natarajan
 - Shafay Joyo
 
-# Models [WIP]
+# Fine-tuned Adapters
 - Python: [https://huggingface.co/ahmedashrafay/staradapters-python](https://huggingface.co/ahmedashrafay/staradapters-python)
 - Java: [https://huggingface.co/ahmedashrafay/staradapters-java](https://huggingface.co/ahmedashrafay/staradapters-java)
 - Javascript: [https://huggingface.co/ahmedashrafay/staradapters-javascript](https://huggingface.co/ahmedashrafay/staradapters-javascript)
 - C++: [https://huggingface.co/ahmedashrafay/staradapters-cpp](https://huggingface.co/ahmedashrafay/staradapters-cpp)
 
+# Merged Adapters
+- staradapters-dare-ties: [https://huggingface.co/ahmedashrafay/staradapters-dare-ties] (https://huggingface.co/ahmedashrafay/staradapters-dare-ties)
+- staradapters-dare-ties-svd:[https://huggingface.co/ahmedashrafay/staradapters-dare-ties-svd] (https://huggingface.co/ahmedashrafay/staradapters-dare-ties-svd)
+- staradapters-dare-linear:[https://huggingface.co/ahmedashrafay/staradapters-dare-linear] (https://huggingface.co/ahmedashrafay/staradapters-dare-linear)
+- staradapters-dare-linear-svd:[https://huggingface.co/ahmedashrafay/staradapters-dare-linear-svd] (https://huggingface.co/ahmedashrafay/staradapters-dare-linear-svd)
+- staradapters-dare-ties: [https://huggingface.co/ahmedashrafay/staradapters-ties] (https://huggingface.co/ahmedashrafay/staradapters-ties)
+- staradapters-ties-svd:[https://huggingface.co/ahmedashrafay/staradapters-ties-svd] (https://huggingface.co/ahmedashrafay/staradapters-ties-svd)
+- 
 # Credits
 This repository builds upon code from:
 - [StarCoder2](https://github.com/bigcode-project/starcoder2)
