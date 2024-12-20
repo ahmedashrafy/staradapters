@@ -153,3 +153,57 @@ accelerate launch main.py \
   --save_generations \
   --use_auth_token
 ```
+
+# Merge LoRA
+
+To merge the LoRA adapters as detailed in the final report, follow the following steps
+
+## 1. Clone the Repository
+
+Clone the required GitHub repository:
+
+```bash
+git clone https://github.com/ahmedashrafy/staradapters.git
+```
+
+## 2. Change Directory
+
+Navigate to the cloned repository:
+
+```bash
+cd lora-merge
+```
+
+## 3. Run the jupyter notebook
+
+
+```bash
+jupyter notebook lora-merge.ipynb
+```
+
+# Ablation Study
+
+To reporoduce the ablation study as detailed in the final report, follow the following steps
+
+## 1. Clone the Repository
+
+Clone the required GitHub repository:
+
+```bash
+git clone https://github.com/ahmedashrafy/staradapters.git
+```
+
+## 2. Change Directory
+
+Navigate to the cloned repository:
+
+```bash
+cd masking-ablation-study
+```
+
+## 3. Run the jupyter notebook
+
+
+```bash
+jupyter notebook masking-ablation-study.ipynb
+```
