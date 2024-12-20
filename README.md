@@ -1,4 +1,4 @@
-# StarAdapters: Optimizing Language-Specific Performance of Code Models Using Swappable LoRA Adapters
+# StarAdapters: Optimizing Language-Specific Performance of Code Models Using Merged LoRA Adapters
 This repository has the reproduction code and the evaluation result files for the project "Optimizing Language-Specific Performance of Code Models Using Swappable LoRA Adapters" created for the Columbia University class COMS E6998 Generative Models for Code,
 
 
